@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Progress Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏋️ Fitness Progress Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="stats">
+      <h2>Your Stats</h2>
+      <div class="card">
+        <p>Weight: <span id="weight">70 kg</span></p>
+        <p>Calories Burned: <span id="calories">500</span></p>
+        <p>Workouts Completed: <span id="workouts">3</span></p>
+      </div>
+    </section>
+
+    <section class="charts">
+      <h2>Progress Charts</h2>
+      <canvas id="weightChart"></canvas>
+      <canvas id="calorieChart"></canvas>
+    </section>
+
+    <section class="goals">
+      <h2>Goals</h2>
+      <input type="text" id="goalInput" placeholder="Enter a new goal">
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Stay consistent 💪</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
